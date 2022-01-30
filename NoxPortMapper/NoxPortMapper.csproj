@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>PortOpener.App</StartupObject>
+    <OutputType>WinExe</OutputType>
+    <PackageId>Nox Port Mapper</PackageId>
+    <Authors>Loïck Noa Obiang Ndong</Authors>
+    <Company>Nox Corporation</Company>
+    <Product>Nox Port Mapper</Product>
+    <Description>Allows users to easily add a custom port mapping to any UPnP or PMP compatible router</Description>
+    <Copyright>Loïck Noa Obiang Ndong</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Prefer32Bit>true</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+	<ItemGroup>
+    <Reference Include="Open.Nat">
+      <HintPath>D:\TheEkinnox\NoxCorp\Assets\Code libs\Open.NAT-master\Open.Nat\bin\Release\net45\Open.Nat.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
