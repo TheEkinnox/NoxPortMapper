@@ -22,10 +22,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
-	<ItemGroup>
+  <ItemGroup>
     <Reference Include="Open.Nat">
-      <HintPath>D:\TheEkinnox\NoxCorp\Assets\Code libs\Open.NAT-master\Open.Nat\bin\Release\net45\Open.Nat.dll</HintPath>
-      <Private>true</Private>
+      <HintPath>..\3rd-party\Open.NAT\Open.Nat.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
